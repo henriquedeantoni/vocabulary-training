@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    box-sizing: border-box;
+}
+
+.timer-button-section{
+    height: 15%;
+    background: #e08a1a;
+}
+
+h1{
+    font-size: 40px;
+    margin: 0 0 10px 50px;
+}
+
+h2{
+    font-size: 28px;
+    margin: 0 0 10px 80px;
+}
+
+.header-button-start{
+    width: 160px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    background: #278323;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.header-button-next{
+    width: 220px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    background: #4e64e2;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+body{
+    background-color: #ddd694;
+}
+
+.box-change{
+    display: flex;
+}
+
+.image-section{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-image{
+    height: 375px;
+    width: 600px;
+    margin:25px;
+    border: 3px black solid;
+}
+
+.next-button{
+    width: 210px;
+    font-size: 28px;
+    height: 44px;
+    font-weight: 600;
+    background: #4e64e2;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+
+
+.question{
+    flex-direction: column;
+    margin: 40px 0 0 40px;
+}
+
+.tittle-form{
+    font-size: 25px;
+}
+
+label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+input {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+  }
+
+  label{
+    font-size: 25px;
+    height: 35px;
+  }
+  .radio{
+    margin-bottom: 10px;
+    margin-right: 12px;
+    transform: scale(1.6)
+  }
