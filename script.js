@@ -147,7 +147,6 @@ function putAnswer(){
     }
   })
 
-
   return findWord
 }
 
@@ -185,10 +184,6 @@ const maxWords=29
 let indexWord=1
 
 
-  //buttonStartGame.addEventListener('click', () => refreshImage(cardList, indexWord))
-
-  
-
 
     function waitClick(){
       //refreshImage(cardList, indexWord)  
@@ -214,12 +209,20 @@ let indexWord=1
       
       let word = compareAnswer(putAnswer())        
       
-
+      let htmlAudio = ''
 
       if(word==true && indexWord<maxWords){
+        const audioSection = document.querySelector(".audio-box") 
+
+        htmlAudio += `<div class="audio-box"><p id="message">Acertou!!</p><audio id="audioSection" controls autoplay>
+        <source src="https://translate.google.com.br/translate_tts?ie=UTF-8&q=${putAnswer()}&tl=en&client=tw-ob">
+        </audio></div>`
+
+        audioSection.innerHTML=htmlAudio
+
       //let named = getedRandonName(cardList, indexWord, nameList)        
         //alert("resposta correta")
-        window.open(`https://translate.google.com.br/translate_tts?ie=UTF-8&q=${putAnswer()}&tl=en&client=tw-ob`, 'newwindow','height=220, width=320, top=700, left=200');
+        //window.open(`https://translate.google.com.br/translate_tts?ie=UTF-8&q=${putAnswer()}&tl=en&client=tw-ob`, 'newwindow','height=220, width=320, top=700, left=200');
         indexWord++
         let newName = getRandonName(cardList, indexWord, nameList)
 
@@ -229,8 +232,13 @@ let indexWord=1
         console.log(indexWord)
       }
       else if (word==false && indexWord<maxWords){
-        alert("Wrong")
-        //refreshImage(cardList, indexWord) 
+
+        const audioSection = document.querySelector(".audio-box") 
+
+        htmlAudio += `<div class="audio-box"><p id="message">Errado, tente novamente!!</p></div>`
+
+        audioSection.innerHTML=htmlAudio
+
         refreshImage(cardList, indexWord, name)
         respondeAnswer(indexWord, maxWords, name)
       }
