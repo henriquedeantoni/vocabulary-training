@@ -26,7 +26,7 @@ const cardList = [
     { id: '0025', name: 'Motorcycle', level: 'a1', src: './assets/0025_motorcycle_a1.jpg' },              
     { id: '0026', name: 'Wall', level: 'a1', src: './assets/0026_wall_a1.jpg' },
     { id: '0027', name: 'Bubbles', level: 'a1', src: './assets/0027_bubbles_a1.jpg' },
-    { id: '0028', name: 'Cat', level: 'a1', src: './assets/0028_cat_a1.jpg' },
+    { id: '0028', name: 'Cat', level: 'a1', src: './assets/0028_cat_a1.JPG' },
     { id: '0029', name: 'Desert', level: 'a1', src: './assets/0029_desert_a1.jpg' },
     { id: '0030', name: 'Eggs', level: 'a1', src: './assets/0030_eggs_a1.jpg' },          
 ]
